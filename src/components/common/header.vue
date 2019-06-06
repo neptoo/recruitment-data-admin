@@ -37,7 +37,7 @@
                             </span>
                             <el-dropdown-menu slot="dropdown" >
                                 <el-dropdown-item >
-                                <span class="pop-title">You have new messages! </span>
+                                <span class="pop-title">你有新的信息！ </span>
                                 </el-dropdown-item>
                                 <el-dropdown-item v-for="task in tasks" :key="task.id" divided>
                                     <div class="task-div">
@@ -60,7 +60,7 @@
          <el-col :xs="8" :sm="8" :md="2" >
             <div class="user-header">
                 <el-dropdown menu-align="start">
-                    <img src="../../assets/head2.jpg" />
+                    <img src="../../assets/head.jpg" />
                     <el-dropdown-menu slot="dropdown">
                         <el-dropdown-item >
                             <div class="setting-div">

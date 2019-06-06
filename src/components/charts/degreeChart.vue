@@ -42,11 +42,6 @@ export default {
               position: 'inner'
             }
           },
-          // labelLine: {
-          //   normal: {
-          //     show: false
-          //   }
-          // },
           data: [{
               value: 3,
               name: '博士'

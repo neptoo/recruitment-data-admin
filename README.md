@@ -1,37 +1,81 @@
-# jspangAdmin
+# 招聘数据管理系统
 
-> 一个建立在Vue2.0框架基础上的后台管理系统，它包含了后台所用的前端样式和常用组件。它可以快速的帮你搭建基于Vue的后台管理系统。
-## 相关技术
-Vue-cli + element + eCharts
-## Demo（案例预览）
-[Demo](http://jspang.com/jspangAdmin)
+## 简介
+> 一个建立在Vue2.0框架基础上的数据管理系统，本系统采用爬取的招聘网站数据进行分析
 
-## image（图片）
-### 后台首页（DashBoard）
-![jspangAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin01.png)
-### 基本图标（charts）
-![jspangAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin02.png)
-### 表单页面（Form Elements）
-![jspangAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin03.png)
-### 表格（Tables）
-![jspangAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin04.png)
-### MarkDown编辑和解析（MarkDown）
-![jspangAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin05.png)
-### 任务表单（To Do List）
-![jspangAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin06.png)
-## Build Setup（使用搭建步骤）
-``` bash
-# install dependencies（安装）
-npm install
+前端: `Vue.js`, `Element-ui`, `ECharts`
+后端: `Express`
+数据库: `MySQL`
 
-# serve with hot reload at localhost:8080（运行）
-npm run dev
+## 功能
 
-# build for production with minification（打包）
-npm run build
+```
+- 注册 / 登录 / 注销
 
-# build for production and view the bundle analyzer report
-npm run build --report
+- 表格
+  - 增删改查
+
+- 可视化数据展示
+  - 饼图
+  - 直方图
+  - 雷达图
+  - 中国地图
+
+- 待办事项
+  - TodoList
+
+- 编辑器
+  - Markdown
+
+- Excel
+  - Excel上传
+
+- 错误页面
+  - 404
+
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 目录
+服务端文件结构
+|-- server
+  |-- api				// 与数据库的各个表连接接口
+    |-- userApi.js
+    |-- hireApi.js
+  |-- db.js					// mysql数据库连接配置
+  |-- index.js				// Express服务器入口文件
+  |-- sqlMap.js
+
+前端文件结构
+|-- src
+  |-- assets
+  |-- components
+    |-- common						// hearder sidebar等公共组件
+	|-- page						// Dahboard等主要路由模块
+	|-- charts						// 可视化图表
+	|-- Login.vue						// 登录模块
+
+
+## 项目截图
+### 首页（DashBoard）
+![hireAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin01.png)
+### 基本图表（charts）
+![hireAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin02.png)
+### 表格（Tables）
+![hireAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin04.png)
+### MarkDown编辑和解析（MarkDown）
+![hireAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin05.png)
+### 任务表单（To Do List）
+![hireAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin06.png)
+## 项目运行
+``` bash
+# 安装依赖
+npm install
+
+# 服务器端
+cd server
+node index
+
+# 项目根目录
+npm run dev
+
+```

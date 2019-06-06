@@ -15,7 +15,7 @@
       </el-form>
     </el-col>
     <!--列表-->
-    <el-table :data="list.slice((currentPage-1)*pagesize,currentPage*pagesize)" highlight-current-row style="width: 100%;" >
+    <el-table :data="list.slice((currentPage-1)*pagesize,currentPage*pagesize)" highlight-current-row style="width: 100%;">
       <el-table-column type="selection" width="55">
       </el-table-column>
       <el-table-column type="index" width="60">
@@ -36,7 +36,7 @@
       <el-table-column label="操作" width="150">
         <template slot-scope="scope">
           <el-button size="small" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
-          <el-button type="danger" size="small" @click="handleDel(scope.$index)">删除</el-button>
+          <el-button type="danger" size="small" @click="handleDel(scope.$index, scope.row)">删除</el-button>
         </template>
       </el-table-column>
     </el-table>
@@ -152,7 +152,6 @@ export default {
       axios.get('api/hire/getAllList').then(response => {
         this.list = response.data
         this.total = response.data.length
-
       }).catch(function(error) {
         console.log(error)
       })
@@ -204,7 +203,7 @@ export default {
       // var hire_id = this.editForm.hire_id
       // console.log(index,row,hire_id)
     },
-    // del
+    // 假删除
     handleDel(index, row) {
       this.$confirm("确认删除该记录吗?", "提示", {
         type: "warning"
@@ -212,18 +211,20 @@ export default {
         this.list.splice(index, 1)
         this.$message.success('删除成功')
       })
-      // var _this = this
-      // var hire_id = this.editForm.hire_id
-      // axios.post('/api/hire/delList', {
-      //   hire_id: hire_id
-      // }).then(function(response) {
-      //   alert('成功删除')
-      //   // this.dialogFormVisible = false
-      // }).catch(function(error) {
-      //   console.log(error)
-      // })
 
     },
+    // 删除?
+    // handelDel() {
+    //     var hire_id = this.editForm.hire_id
+    //     axios.post('/api/hire/delList', {
+    //         hire_id: hire_id
+    //     }).then(function (response) {
+    //         console.log(response)
+    //         alert('成功删除')
+    //     }).catch(function (error) {
+    //         console.log(error)
+    //     })
+    // },
 
     // 查询
     getList() {
@@ -261,7 +262,7 @@ export default {
         hire_id: hire_id
       }).then(function(response) {
         alert('成功更新' + title + '')
-        // this.dialogFormVisible = false
+        this.dialogFormVisible = false
       }).catch(function(error) {
         console.log(error)
       })

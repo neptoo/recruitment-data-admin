@@ -37,7 +37,7 @@ export default {
         ]
       },
       series: [{
-        name: 'BOSS vs LAGOU（Budget vs spending）',
+        name: 'BOSS vs LAGOU',
         type: 'radar',
         areaStyle: { normal: {} },
         data: [{
