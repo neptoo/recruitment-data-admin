@@ -36,36 +36,50 @@
 ```
 
 ## 目录
-服务端文件结构
+
+服务端
+```
 |-- server
-  |-- api				// 与数据库的各个表连接接口
+
+  |-- api    // 与数据库的各个表连接接口
+
     |-- userApi.js
+
     |-- hireApi.js
-  |-- db.js					// mysql数据库连接配置
-  |-- index.js				// Express服务器入口文件
+
+  |-- db.js     // mysql数据库连接配置
+
+  |-- index.js    // Express服务器入口文件
+
   |-- sqlMap.js
+```
 
-前端文件结构
+前端
+```
 |-- src
-  |-- assets
-  |-- components
-    |-- common						// hearder sidebar等公共组件
-	|-- page						// Dahboard等主要路由模块
-	|-- charts						// 可视化图表
-	|-- Login.vue						// 登录模块
 
+  |-- components
+
+  |-- common      // hearder sidebar等公共组件
+
+  |-- page      // Dahboard等主要路由模块
+
+  |-- charts      // 可视化图表
+
+  |-- Login.vue      // 登录模块
+```
 
 ## 项目截图
 ### 首页（DashBoard）
-![hireAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin01.png)
+![hireAdmin](https://raw.githubusercontent.com/neptoo/recruitment-data-admin/master/static/views/1.png)
 ### 基本图表（charts）
-![hireAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin02.png)
-### 表格（Tables）
-![hireAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin04.png)
-### MarkDown编辑和解析（MarkDown）
-![hireAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin05.png)
-### 任务表单（To Do List）
-![hireAdmin](http://7xjyw1.com1.z0.glb.clouddn.com/jspangadmin06.png)
+![hireAdmin](https://raw.githubusercontent.com/neptoo/recruitment-data-admin/master/static/views/2.png)
+![hireAdmin](https://raw.githubusercontent.com/neptoo/recruitment-data-admin/master/static/views/3.png)
+### 增删改查
+![hireAdmin](https://raw.githubusercontent.com/neptoo/recruitment-data-admin/master/static/views/4.png)
+### Markdown
+![hireAdmin](https://raw.githubusercontent.com/neptoo/recruitment-data-admin/master/static/views/5.png)
+
 ## 项目运行
 ``` bash
 # 安装依赖
