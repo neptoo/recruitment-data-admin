@@ -7,6 +7,9 @@
 后端: `Express`
 数据库: `MySQL`
 
+系列文章
+- [毕业设计上，带你用前端撸后台(数据库篇](https://neptoo.github.io/2019/06/24/graducation-project-one/ "毕业设计上，带你用前端撸后台(数据库篇"))
+
 ## 功能
 
 ```
@@ -60,9 +63,9 @@
 
   |-- components
 
-  |-- common      // hearder sidebar等公共组件
+  |-- common      // header sidebar等公共组件
 
-  |-- page      // Dahboard等主要路由模块
+  |-- page      // Dashboard等主要路由模块
 
   |-- charts      // 可视化图表
 
