@@ -9,7 +9,7 @@
 
 系列文章
 - [毕业设计上，带你用前端撸后台(数据库篇](https://neptoo.github.io/2019/06/24/graducation-project-one/ "毕业设计上，带你用前端撸后台(数据库篇"))
-
+- [毕业设计下，带你用前端撸后台(ECharts可视化篇](https://neptoo.github.io/2019/06/30/graducation-project-two/ "毕业设计下，带你用前端撸后台(ECharts可视化篇"))
 ## 功能
 
 ```
