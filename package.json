@@ -23,7 +23,7 @@
     "vue-resource": "^1.5.1",
     "vue-router": "^2.2.0",
     "vue-simplemde": "^0.3.7",
-    "xlsx": "^0.14.3"
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
