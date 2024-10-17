@@ -8,8 +8,8 @@
 数据库: `MySQL`
 
 系列文章
-- [毕业设计上，带你用前端撸后台(数据库篇](https://neptoo.github.io/2019/06/24/graducation-project-one/ "毕业设计上，带你用前端撸后台(数据库篇"))
-- [毕业设计下，带你用前端撸后台(ECharts可视化篇](https://neptoo.github.io/2019/06/30/graducation-project-two/ "毕业设计下，带你用前端撸后台(ECharts可视化篇"))
+- [毕业设计(上):Vue+MySQL前端连接数据库实现表格增删改查](https://neptoo.github.io/2019/毕业设计上vue-mysql前端连接数据库实现表格增删改查/)
+- [毕业设计(下):Vue+ElementUI+ECharts实现前端数据可视化](https://neptoo.github.io/2019/毕业设计下vue-elementui-echarts实现前端数据可视化/)
 ## 功能
 
 ```
