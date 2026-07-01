@@ -11,7 +11,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.19.0",
-    "echarts": "^4.2.1",
+    "echarts": "^6.1.0",
     "element-ui": "^2.6.1",
     "file-saver": "^2.0.1",
     "mavon-editor": "^2.7.3",
